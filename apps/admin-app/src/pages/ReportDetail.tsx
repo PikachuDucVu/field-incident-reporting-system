@@ -98,6 +98,7 @@ export default function ReportDetail() {
       case 'road': return 'Đường xá';
       case 'industrial_waste': return 'Rác thải công nghiệp';
       case 'environment': return 'Môi trường';
+      case 'water_pollution': return 'Ô nhiễm nguồn nước';
       case 'chemical': return 'Hóa học';
       case 'biological': return 'Sinh học';
       case 'physical': return 'Vật lý';

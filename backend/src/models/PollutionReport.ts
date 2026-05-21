@@ -7,7 +7,7 @@ export interface IPollutionReport {
     type: 'Point';
     coordinates: [number, number]; // [longitude, latitude]
   };
-  pollutionType: 'traffic' | 'infrastructure' | 'road' | 'industrial_waste' | 'environment' | 'other';
+  pollutionType: 'traffic' | 'infrastructure' | 'road' | 'industrial_waste' | 'environment' | 'water_pollution' | 'other';
   severity: 'low' | 'medium' | 'high' | 'critical';
   status: 'pending' | 'in_progress' | 'resolved' | 'rejected';
   reporterId: mongoose.Types.ObjectId;
@@ -34,7 +34,7 @@ const pollutionReportSchema = new mongoose.Schema<IPollutionReport>({
   },
   pollutionType: { 
     type: String, 
-    enum: ['traffic', 'infrastructure', 'road', 'industrial_waste', 'environment', 'other'], 
+    enum: ['traffic', 'infrastructure', 'road', 'industrial_waste', 'environment', 'water_pollution', 'other'], 
     required: true 
   },
   severity: { 

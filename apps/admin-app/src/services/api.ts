@@ -35,7 +35,7 @@ export interface ReportData {
     latitude: number;
     longitude: number;
   };
-  pollutionType: 'traffic' | 'infrastructure' | 'road' | 'industrial_waste' | 'environment' | 'other';
+  pollutionType: 'traffic' | 'infrastructure' | 'road' | 'industrial_waste' | 'environment' | 'water_pollution' | 'other';
   severity: 'low' | 'medium' | 'high' | 'critical';
   images?: string[];
 }

@@ -386,6 +386,7 @@ export default function CreateReport() {
                 <option value="road">Đường xá</option>
                 <option value="industrial_waste">Rác thải công nghiệp</option>
                 <option value="environment">Môi trường</option>
+                <option value="water_pollution">Ô nhiễm nguồn nước</option>
                 <option value="other">Khác</option>
               </select>
             </div>
