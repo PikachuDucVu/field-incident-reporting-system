@@ -1,0 +1,29 @@
+{
+  "name": "water-pollution-gis",
+  "version": "1.0.0",
+  "description": "WebGIS water pollution reporting system",
+  "private": true,
+  "packageManager": "bun@1.3.0",
+  "workspaces": ["apps/*", "backend"],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:backend": "cd backend && bun run index.ts",
+    "dev:mobile": "cd apps/mobile-app && bun run dev",
+    "dev:admin": "cd apps/admin-app && bun run dev",
+    "dev:all": "concurrently \"bun run dev:backend\" \"bun run dev:mobile\" \"bun run dev:admin\"",
+    "turbo": "turbo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1",
+    "turbo": "^2.6.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
